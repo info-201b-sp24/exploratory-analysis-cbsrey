@@ -5,50 +5,101 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+Analyzing Netflix's Platform
 
 ### Authors
 
-Names of your team members
+Christa Srey cbsrey@uw.edu
+Thaks Jeamanukoolkit tjpippo@uw.edu
+Theodore Sakamoto tkes@uw.edu
 
 ### Date
 
-Winter 2022
+May 17 Spring 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main focus is to analyze Netflix's data to look for any overall patterns within the data. To address this, we plan to look at the data from multiple angles and consider all possible trends to see what the data can tell us. This is important because by focusing on the general trends of the data, we are able to consider aspects of trends and variables and their interconnectivity that we would not be able to if we were only to look for a single trend
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Viewership Trends, Analysis, Data-Driven Insights
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Q1. Are there regional differences in content preferences and consumption behavior?
+Analyzing geographical patterns in Netflix usage can inform localization efforts and content acquisition strategies for different markets. Discovering these geographical patterns would be important information to gather in understanding what recommendations might be tailored to viewers depending on the region.
+
+Q2. How diverse is the content available on Netflix in terms of language, region, and cultural representation?
+This question is important for assessing Netflix's commitment to diversity and inclusion and identifying potential gaps in representation. Our textbook, ‘Data Feminism’ has a focus on inclusivity in all aspects of data, and it’s important to apply that focus on this project as well to understand whether or not representation is being provided for in this day and age through a form of Entertainment.
+
+Q3. What are the most popular genres on Netflix over time?
+Analyzing trends in genre popularity could help understand shifting viewer preferences and guide content production strategies for both Netflix and other streaming platforms. This could help with the algorithm of recommendations for viewers as well since they could be personalized to enhance user experience with the platform with matching users to content they would enjoy more.
+
+Q4. Has Netflix shown more focus on TV Shows in comparison to movies on the platform?
+In recent years, we can look at the dates of shows and movies being released on Netflix to gather information on what is being pushed more for audiences to watch. Through this, we can see if there is a trend of shows being generally watched more frequently than movies if Netflix is providing shows on the platform for viewers.
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+Our topic is mainly centered around analyzing Netflix’s show data to observe any possible trends and patterns. This ranges from diversity data to generic popularity.
+The NY Times has given some thought to some of these patterns. Within the past few years, there has been an increase in people canceling their subscription streaming services. With this rise in cancellation, companies are now looking to try and keep their viewer’s attention through means other than their media. One of these tactics has been to “\[try\] to keep subscribers hooked with “coming soon” features”(Koblin). With the need for a constant supply of features to market as “coming soon”, many companies have begun rushing to produce as many shows as possible simply to have something to advertise. This has created an increase in the number of shows. Additionally, with the goal of the current new film chief being “\[to\] make Netflix’s movies better, cheaper and less frequent”(Sperling), we can see Netflix’s mentality of moving away from long form movies and instead pivoting to a more profitable show-based selection. These two findings relate to our research into what sort of media is being produced or pushed to audiences
+From the LA Times, we find that Netflix is leading the film industry in their casting and their media directing.  With a 24% lead in movies with women leads, and a higher percentage of female directors, and directors of color than the industry(Lee), Netflix has shown to be paving a new more inclusive path for equal expression. While this does not necessarily correlate to the diversity shown in the content within Netflix, having diverse people directing and creating media is a surefire way of allowing diversity to grow in the long run. This can help us look at how diverse Netflix’s content is and in what direction they look to be moving in for the future.
+Koblin, John. “Americans’ New TV Habit: Subscribe. Watch. Cancel. Repeat.” The New York Times, The New York Times, 20 Apr. 2024, www.nytimes.com/2024/04/20/business/media/streaming-subscription-jumping.html.
+Sperling, Nicole. “Netflix’s New Film Strategy: More about the Audience, Less about Auteurs.” The New York Times, The New York Times, 14 Apr. 2024, www.nytimes.com/2024/04/14/business/media/netflix-movies-dan-lin.html.
+“New Netflix Data Shows Diversity Gains, but Does Not Factor Recent Job Cuts.” Los Angeles Times, Los Angeles Times, 27 Apr. 2023, www.latimes.com/entertainment-arts/business/story/2023-04-27/netflix-diversity-data-creative-equity-fund.
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source
+
+ https://www.kaggle.com/datasets/shivamb/netflix-shows
+
+> Who collected the data?
+
+Shivam Bansal is the owner and collaborator of the dataset. No name was listed under authors.
+
+> How was the data collected or generated?
+
+The data was collected through regular API calls.
+
+
+> Why was the data collected?
+
+The data was collected for the purpose of exploring data analysis and research–It makes it more convenient to look at the data in a table and a visual standpoint in order to grasp the details of ratings, casts, directors, release dates, time durations, genres, variety of content (in each country), and so forth.
+
+>How many observations (rows) are in your data?
+
+8808 (rows)
+
+> How many features (columns) are in the data?
+
+12 features (columns)
+
+> What, if any, ethical questions or questions of power do you need to consider when working with this data?
+
+- Representation and bias would be an ethical question/question of power at hand to consider when working with this data because the dataset might not accurately represent diverse perspectives, cultures, and communities–However, this is also a factor that we will be researching and working on for this project.
+- Transparency is also another important factor to consider when looking at the overall collection of data because we need to make sure that there are valid data sources to ensure the reliability of our data.
+
+
+> What are possible limitations or problems with this data?   (at least 200 words)
+
+Some possible limitations include incomplete and missing data where the dataset may contain missing or incomplete information such as cast members, the various genres the show or movie might fall in—This also ties in with the accuracy and reliability of the data, as it might vary with possible errors or inconsistencies in descriptions and other forms of data. With this, cleaning and reprocessing the data to address these possible quality issues causes more time to be consumed and may require further monitoring. However, a big possible limitation and problem we might encounter is how the dataset may lack contextual information about viewer demographics, viewing habits, or market dynamics, making it challenging to interpret patterns and trends in viewer behavior. Therefore, it makes it subject to restrictions on our part to uncover more information regarding viewership and the possible recommendations that the platform’s algorithm would provide with the collected data from the dataset. Furthermore, the dataset provides a limited scope of analysis—while it provides insight into Netflix’s content with the shows and the movies they provide, it may not capture the full spectrum of factors influencing viewer preferences, content consumption behavior, or the industry dynamics. Complementing the dataset with additional data sources can provide a more comprehensive understanding of the streaming ecosystem. Overall, addressing these limitations and problems requires careful consideration of data quality, representativeness, contextual factors, and ethical considerations.
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+For technologists, the map could create an insight that would be beneficial to marketing or recommendation algorithm creators. Seeing the difference in interest in each country would create more understanding of what each region has interest in, so they can target advertisements with an algorithm that could be more precise.
+
+For designers, this information could be beneficial when designing the specific genre or topics that would be displayed when users open the application. This would attract more people to use the app and make more user application satisfaction.
+
+For policymakers, these insights might help them decide which movie or series they want to invest in specific regions or countries. Since different movies require different quotas and different licenses to stream, Netflix would gain the most benefit financially if they target the user's interests correctly.
+
+Overall, these stakeholders would benefit by gaining insights on mapping the types of movies so they can target their media correctly and increase user satisfaction.
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+Mapping the content provided in each specific country could blind us from the fact that cultural differences in specific areas of the countries could hold different interests or cultural beliefs that the information content provided would not be relevant.
+Another important point that should be considered is that there might be restrictions due to laws and licensing in some of the countries that would impact the insight. In addition, some countries have serious religious beliefs that could impact content decisions.
+Furthermore, some streaming competitors in different countries could hold a license of the same movies or TV series that Netflix has but it is on another platform. This means that the precision of data could be varied and the only exception would be the Netflix-exclusive content that is only on Netflix. Also, another factor that should be considered is the fact that some of the content purchased by Netflix has time restrictions and they are only on the platform for a certain time frame which could impact the overall insights of the information.
 
 ### Summary Information
 
@@ -79,6 +130,9 @@ Describe why you chose this chart and what information it reveals
 
 ### Chart 3
 
-Include a chart
+``````{r, echo = FALSE, code = readLines("chart1.R")}
+```
 
-Describe why you chose this chart and what information it reveals
+This chart shows a map of the countries and the number of movies and shows produced there.
+This graph reveals where the majority of films and media originate and who is dominating
+a majority of the space in the film industry
