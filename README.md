@@ -20,7 +20,7 @@ Your report must include all of the elements from your Final Project Proposal, b
 In addition, your report must include: 
 
   - A paragraph of summary information, citing at least 5 values calculated from the data  
-  - A table of  aggregated data (e.g., that has been "grouped" by one of your features)  
+  - A table of aggregated data (e.g., that has been "grouped" by one of your features)  
   - 3 charts that display information from the data (what you visualize is up to you)  
 
 ## File organization
